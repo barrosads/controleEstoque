@@ -1,6 +1,6 @@
-import ProdutoFornecedor from '../models/ProdutoFornecedor';
-import Produto from '../models/Produto';
-import Fornecedor from '../models/Fornecedor';
+import ProdutoFornecedor from '../models/ProdutoFornecedor.js';
+import Produto from '../models/Produto.js';
+import Fornecedor from '../models/Fornecedor.js';
 
 // Associa um fornecedor ao produto
 export async function associateFornecedor(req, res) {

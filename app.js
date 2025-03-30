@@ -1,10 +1,10 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
-import userRoutes from './src/routes/userRoutes';
-import produtoRoutes from './src/routes/produtoRoutes';
-import fornecedorRoutes from './src/routes/fornecedorRoutes';
-import produtoFornecedorRoutes from './src/routes/produtoFornecedorRoutes';
+import userRoutes from './src/routes/userRoutes.js';
+import produtoRoutes from './src/routes/produtoRoutes.js';
+import fornecedorRoutes from './src/routes/fornecedorRoutes.js';
+import produtoFornecedorRoutes from './src/routes/produtoFornecedorRoutes.js';
 
 import './src/database';
 

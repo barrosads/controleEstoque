@@ -1,4 +1,4 @@
-import Fornecedor from '../models/Fornecedor';
+import Fornecedor from '../models/Fornecedor.js';
 
 export async function store(req, res) {
   try {
