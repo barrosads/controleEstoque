@@ -6,7 +6,7 @@ import produtoRoutes from './src/routes/produtoRoutes.js';
 import fornecedorRoutes from './src/routes/fornecedorRoutes.js';
 import produtoFornecedorRoutes from './src/routes/produtoFornecedorRoutes.js';
 
-import './src/database';
+import './src/database/index.js';
 
 
 class App{
