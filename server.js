@@ -1,5 +1,5 @@
 import app from './app.js';
-import sequelize from './src/database';
+import sequelize from './src/database/index.js';
 
 const port = process.env.PORT || 3000;
 sequelize.sync({ force: true })  
