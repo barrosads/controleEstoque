@@ -1,9 +1,11 @@
-import Sequelize from 'sequelize';
-import databaseConfig from '../config/database.js';
-import User from '../models/User.js';
-import Produto from '../models/Produto.js';
-import Fornecedor from '../models/Fornecedor.js';
-import ProdutoFornecedor from '../models/ProdutoFornecedor.js';
+// pasta/database/index.js
+
+const Sequelize = require('sequelize');
+const databaseConfig = require('../config/database');
+const User = require('../models/User');
+const Produto = require('../models/Produto');
+const Fornecedor = require('../models/Fornecedor');
+const ProdutoFornecedor = require('../models/ProdutoFornecedor');
 
 const models = [User, Produto, Fornecedor, ProdutoFornecedor];
 const conexao = new Sequelize(databaseConfig);
@@ -11,4 +13,4 @@ const conexao = new Sequelize(databaseConfig);
 models.forEach((model) => model.init(conexao));
 models.forEach((model) => model.associate && model.associate(conexao.models));
 
-export default conexao;
+module.exports = conexao;
