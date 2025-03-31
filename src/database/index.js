@@ -1,5 +1,3 @@
-// pasta/database/index.js
-
 const Sequelize = require('sequelize');
 const databaseConfig = require('../config/database');
 const User = require('../models/User');
@@ -13,4 +11,4 @@ const conexao = new Sequelize(databaseConfig);
 models.forEach((model) => model.init(conexao));
 models.forEach((model) => model.associate && model.associate(conexao.models));
 
-module.exports = conexao;
+export default conexao;
