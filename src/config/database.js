@@ -1,12 +1,12 @@
-import dotenv from 'dotenv';
-import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default {
   dialect: 'sqlite',
-  // Aqui usamos o resolve para garantir que o caminho seja correto
-  storage: resolve(__dirname, './src/database/db_sistema.sqlite'), // Certifique-se de que este caminho é válido
+  storage: resolve(__dirname, './src/database/db_sistema.sqlite'),
   define: {
     timestamps: true,
     underscored: true,
