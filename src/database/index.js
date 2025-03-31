@@ -1,9 +1,9 @@
 import Sequelize from 'sequelize';
 import databaseConfig from '../config/database.js';
-import User from '../models/User';
-import Produto from '../models/Produto';
-import Fornecedor from '../models/Fornecedor';
-import ProdutoFornecedor from '../models/ProdutoFornecedor';
+import User from '../models/User.js';
+import Produto from '../models/Produto.js';
+import Fornecedor from '../models/Fornecedor.js';
+import ProdutoFornecedor from '../models/ProdutoFornecedor.js';
 
 // Inicializa a conexão com o banco de dados usando as configurações
 const conexao = new Sequelize(databaseConfig);
