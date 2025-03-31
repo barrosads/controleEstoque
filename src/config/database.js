@@ -1,8 +1,8 @@
-import { Sequelize } from 'sequelize';
+require('dotenv').config();
 
-export default {
+module.exports = {
   dialect: 'sqlite',
-  storage: './src/database/db_sistema.sqlite',
+  storage: `./${process.env.DATABASE_URL.replace('sqlite:', '')}`,
   define: {
     timestamps: true,
     underscored: true,
