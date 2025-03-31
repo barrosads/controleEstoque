@@ -1,8 +1,8 @@
 require('dotenv').config();
 
-module.exports = {
+export default {
   dialect: 'sqlite',
-  storage: `./${process.env.DATABASE_URL.replace('sqlite:', '')}`,
+  storage: './src/database/db_sistema.sqlite',
   define: {
     timestamps: true,
     underscored: true,
