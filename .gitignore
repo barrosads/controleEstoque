@@ -400,4 +400,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 *.sqlite
-*src/config/src/database/db_sistema.sqlite
+*src/config/src/database/
